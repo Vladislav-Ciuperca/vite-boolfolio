@@ -1,0 +1,5 @@
+<template>
+    <div class="contacts">
+        <h2>Contacts</h2>
+    </div>
+</template>

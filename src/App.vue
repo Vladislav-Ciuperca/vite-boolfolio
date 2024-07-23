@@ -37,13 +37,20 @@
 <!-- //////////////////////////////// -->
 
 <template>
-  <h2>cioa Vue mondo</h2>
-  <div class="card_container">
+
+
+  <router-link class="p-1 px-4 text-decoration-none" to="/">Home</router-link>
+  <router-link class="p-1 px-4 text-decoration-none" to="/about">About</router-link>
+  <router-link class="p-1 px-4 text-decoration-none" to="/projects">Projects</router-link>
+  <router-link class="p-1 px-4 text-decoration-none" to="/contacts">Contacts</router-link>
+
+  <router-view class="p-4"></router-view>
+  <!-- <div class="card_container">
     <Card v-for="progetto in projects"
      :titolo="progetto.titolo" :descrizione="progetto.descrizione"
      :immagine="progetto.immagine" :type="progetto.type.name"
      :technology="progetto.technology"/>
-  </div>
+  </div> -->
   <pre v-for="progetto in projects">{{ progetto.technology }}</pre>
 </template>
 
@@ -54,7 +61,7 @@
     padding: 1rem;
   }
 
-  .card_container{
+  .card_container {
     display: flex;
     flex-wrap: wrap;
     padding: 0 2rem;
@@ -64,11 +71,3 @@
     gap: 1rem;
   }
 </style>
-
-<!-- //////////////////////////////// -->
-
-<script>
-
-
-
-</script>
