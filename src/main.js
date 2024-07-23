@@ -10,6 +10,7 @@ import About from './pages/About.vue'
 import Home from './pages/Home.vue'
 
 
+
 const router = createRouter( {
     history: createWebHistory(),
     routes:[
