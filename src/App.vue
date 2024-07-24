@@ -26,7 +26,7 @@
       axios
         .get(this.ApiLink)
         .then(response => {
-          console.log(response);
+          // console.log(response);
           this.projects = response.data.projects.data
 
         })
@@ -51,7 +51,7 @@
      :immagine="progetto.immagine" :type="progetto.type.name"
      :technology="progetto.technology"/>
   </div> -->
-  <pre v-for="progetto in projects">{{ progetto.technology }}</pre>
+  <!-- <pre v-for="progetto in projects">{{ progetto.technology }}</pre> -->
 </template>
 
 <!-- //////////////////////////////// -->
