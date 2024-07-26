@@ -9,7 +9,8 @@
       descrizione: String,
       immagine: String,
       type: String,
-      technology: String,
+      technology: Array,
+      id:String
     },
 
     data() {
@@ -33,14 +34,18 @@
 <template>
 
   <div class="cont">
-    <h2>{{ titolo }}</h2>
+    <h2>{{ titolo }}{{ id }}</h2>
     <img :src="immagine" alt="">
-    <div class="desc">{{ descrizione }}</div>
+    <div class="desc">
+      {{ descrizione }}
+      <!-- <button class="btn btn-primary"><router-link :to="{name: 'SingleProject' params:{id:id}}">ciao?</router-link></button> -->
+    </div>
     <div class="card_bottom">
 
       <div>Questo è un progetto: {{ type }}</div>
 
       <div>Tecnologie
+        <!-- <span>{{ asd }}</span> -->
         <span v-for="tecnologia in technology">{{ tecnologia.name }}</span>
       </div>
 
@@ -51,17 +56,19 @@
 
 <style scoped>
   h2 {
-    height: 9%;
+    height: 10%;
     border: 2px dashed orange;
     line-height: 60px;
   }
 
   .cont {
     border: 2px dashed green;
-    width: calc(100% / 3 - 2rem);
-    height: 600px;
+    /* width: calc(100% / 3 - 2rem); */
+    min-height: 80vh;
+    overflow: hidden;
     text-align: center;
     border-radius: 20px;
+    margin-bottom:2rem;
   }
 
   .desc {
@@ -83,7 +90,9 @@
     padding: 0 0.3rem;
   }
 
-  img{
+  img {
     width: 95%;
+    height: 50%;
   }
+
 </style>

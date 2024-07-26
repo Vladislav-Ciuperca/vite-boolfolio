@@ -4,6 +4,7 @@ import Home from './pages/Home.vue';
 import About from './pages/About.vue';
 import Projects from './pages/Projects.vue';
 import Contacts from './pages/Contacts.vue';
+import SingleProject from './pages/SingleProject.vue';
 
 
 const router = createRouter({
@@ -20,7 +21,10 @@ const router = createRouter({
         },
         {
             path: '/contacts', name: 'Contacts', component: Contacts
-        }
+        },
+        {
+            path: '/projects/:id', name: 'SingleProject', component: SingleProject
+        },
     ]
 });
 

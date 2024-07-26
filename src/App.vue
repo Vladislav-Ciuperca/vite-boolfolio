@@ -44,7 +44,9 @@
   <router-link class="p-1 px-4 text-decoration-none" to="/projects">Projects</router-link>
   <router-link class="p-1 px-4 text-decoration-none" to="/contacts">Contacts</router-link>
 
-  <router-view class="p-4"></router-view>
+  <div class="p-4">
+    <router-view ></router-view>
+  </div>
   <!-- <div class="card_container">
     <Card v-for="progetto in projects"
      :titolo="progetto.titolo" :descrizione="progetto.descrizione"
