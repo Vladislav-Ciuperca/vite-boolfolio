@@ -10,7 +10,7 @@
       immagine: String,
       type: String,
       technology: Array,
-      id:String
+      id: String
     },
 
     data() {
@@ -68,7 +68,7 @@
     overflow: hidden;
     text-align: center;
     border-radius: 20px;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
   }
 
   .desc {
