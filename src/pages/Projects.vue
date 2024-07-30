@@ -33,7 +33,7 @@
         }
     }
 </script>
-
+<!-- co -->
 <template>
     <div class="projects">
         <h2>Projects</h2>
